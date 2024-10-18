@@ -1,0 +1,124 @@
+/*Jeremy Kirkpatrick, CIS 195 0, 10/16/24-10/17/24 */
+/*CSS RESET */
+body, header, main, footer, div, h1
+{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body 
+{
+  background: #659BDF;
+}
+header
+{
+
+    text-align: left;
+    top: 0;
+    background-color: #2234a8;
+    height: 75px;
+}
+/*set size for font on header, also probably could have just done in header but used h1 instead */
+h1
+{
+  font-size: 2.5em;
+}
+h2
+{
+  font-size: 4.0em;
+  font-style: italic;
+  text-shadow: 2px 2px #fff;
+  text-align: center;
+}
+p
+{
+  text-align: center;
+}
+nav
+{
+  padding: 1%;
+  margin-bottom:1%;
+  background-color: #87CEFB;
+}
+
+nav ul 
+{
+  list-style-type: none;
+  text-align: center;
+}
+
+
+nav li 
+{
+  font-size: 1.0em;
+  font-family: 'Roboto', sans-serif;
+}
+main
+{
+  padding: 2%;
+  font-size: 1.0em;
+  font-family: 'Roboto', sans-serif;
+}
+article
+{
+  padding: 1%;
+}
+footer
+{
+  position:fixed;
+  bottom: 0;
+  background-color: #2234A8;
+}
+
+/*style rule for image */
+img
+{
+  border: 2px solid #000000;
+  max-width: 100%;
+}
+img:hover
+{
+  opacity: 0.5;
+}
+
+/*style rule for figcaption*/
+figcaption
+{
+  background-color: aqua;
+  color: white;
+  font-style: italic, bold;
+  text-align: center;
+}
+
+
+/* Media Query for Tablet Viewports */
+@media screen and (min-width: 481px) {
+    
+  .columns {
+      width: 50%;
+      float: left;
+  }
+
+  article
+  {
+      width: 43%;
+      float: left;
+      height: 160px;
+  }
+  footer {
+      clear: left;
+  }
+  
+}
+
+/* Media Query for Desktop Viewports */
+@media screen and (min-width: 900px) {
+  
+  .columns {
+      width: 25%;
+  }
+  article {
+      width: 27%;
+      height: 140px;
+  }
+}
